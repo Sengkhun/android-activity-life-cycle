@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/haruno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioClick"
+            android:text="Haruno" />
+
+        <RadioButton
+            android:id="@+id/hatake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioClick"
+            android:text="Hatake" />
+
+        <RadioButton
+            android:id="@+id/rocklee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioClick"
+            android:text="Rock Lee" />
+
+        <RadioButton
+            android:id="@+id/uchiha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioClick"
+            android:text="Uchiha" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/haruno" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Do you know the above character?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="sendBtn"
+            android:text="SEND" />
+
+    </LinearLayout>
+
+</LinearLayout>
